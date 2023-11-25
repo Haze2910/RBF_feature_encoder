@@ -6,7 +6,7 @@ if __name__ == "__main__":
     x_dim = 5 # dimension of the data
   
     n_samples = 10 # number of samples to calculate mean and std of
-    samples = np.random.random((n_samples, x_dim)
+    samples = np.random.random((n_samples, x_dim))
 
     # Initialize the normalizer and fit the samples
     normalizer = BatchNormalizer()
