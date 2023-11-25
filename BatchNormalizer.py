@@ -9,8 +9,8 @@ class BatchNormalizer:
         self.beta = beta
     
     def fit(self, samples):
-        self.mean = [samples[:, i].mean() for i in range(samples.shape[0])]
-        self.std = [samples[:, i].std() for i in range(samples.shape[0])]
+        self.mean = [samples[:, i].mean() for i in range(samples.shape[1])]
+        self.std = [samples[:, i].std() for i in range(samples.shape[1])]
 
     def _check_is_fitted(self):
         if not hasattr(self, "mean") or not hasattr(self, "std"):
