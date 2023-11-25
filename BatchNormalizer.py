@@ -14,7 +14,7 @@ class BatchNormalizer:
 
     def _check_is_fitted(self):
         if not hasattr(self, "mean") or not hasattr(self, "std"):
-            raise FitError("Must call fit before transforming data!)
+            raise FitError("Must call fit before transforming data!")
   
     def transform(self, x):
         self._check_is_fitted()
